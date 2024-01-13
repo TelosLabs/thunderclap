@@ -7,6 +7,6 @@ module ThunderclapHelper
   # @param auto_dismiss_delay [Integer] The delay in milliseconds before the flash message automatically dismisses.
   # @return [String] The rendered flash message.
   def flash
-    render 'thunderclap/partials/flash'
+    render 'thunderclap/partials/flash', flash_object: flash
   end
 end
